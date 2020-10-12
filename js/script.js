@@ -1,3 +1,11 @@
+/* smooth-scroll js */
+var scroll = new SmoothScroll('a[href*="#"]', {
+  header: '.header',
+  speedAsDuration: true,
+  speed: 500,
+  easing: 'easeInOutQuint'
+});
+
 /* ハンバーガー */
 $(function () {
   $('.js-nav__toggle').click(function () {
@@ -27,23 +35,14 @@ $(function () {
   });
 });
 
-/* トップへ戻るボタン */
+/* ヘッダーカラーの変更 */
 $(window).on('scroll', function () {
-  if ($(this).scrollTop() > 120) {
-    $('.js-floating').fadeIn();
+  if ($(this).scrollTop() > $('.mv').height() - $('.header').height()) {
+    $('.header').css('background-color', '#333');
   } else {
-    $('.js-floating').fadeOut();
+    $('.header').css('background-color', 'transparent');
   }
 });
-
-/* Safari(iOS) 対策 */
-const setFillHeight = () => {
-  const vh = window.innerHeight * 0.01;
-  document.documentElement.style.setProperty('--vh', `${vh}px`);
-}
-
-window.addEventListener('resize', setFillHeight); // 画面のサイズ変動があった時に高さを再計算する
-setFillHeight(); // 初期化
 
 /* wow js */
 new WOW().init();
@@ -64,14 +63,6 @@ var swiper = new Swiper('.swiper-container', {
 /* modaal */
 $('.modal').modaal();
 
-/* smooth-scroll js */
-var scroll = new SmoothScroll('a[href*="#"]', {
-  header: '.header',
-  speedAsDuration: true,
-  speed: 500,
-  easing: 'easeInOutQuint'
-});
-
 /* mailform (autoKana js) */
 (function ($) {
   $.fn.autoKana('.form__name_1', '.form__read_1', {
@@ -88,3 +79,13 @@ var scroll = new SmoothScroll('a[href*="#"]', {
     lang: 'ja'
   });
 })(jQuery);
+
+/* Safari(iOS) 対策 */
+const setFillHeight = () => {
+  const vh = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty('--vh', `${vh}px`);
+}
+
+window.addEventListener('resize', setFillHeight); // 画面のサイズ変動があった時に高さを再計算する
+
+setFillHeight(); // 初期化
