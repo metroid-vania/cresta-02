@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <meta name="description" content="Coding Practice">
+  <!--  reset css -->
+  <link rel="stylesheet" href="./css/reset.css">
+  <!--  style css -->
+  <link rel="stylesheet" href="./css/style.css">
+  <!-- google fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&family=Noto+Serif:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+
+    <!-- HEADER -->
+    <header class="header">
+      <div class="header__inner">
+        <a href="#" class="brand">Cresta Design</a>
+        <nav class="nav nav--slide">
+          <button class="nav__toggle js-nav__toggle" aria-expanded="false" type="button">
+            <span class="nav__line"><span class="visually-hidden">メニューを開閉する</span></span>
+          </button> <!-- /.nav__toggle -->
+          <ul class="nav__inner js-nav__inner">
+            <li class="nav__item"><a class="nav__link js-nav__link" href="#concept">Concept</a></li>
+            <li class="nav__item"><a class="nav__link js-nav__link" href="#service">Service</a></li>
+            <li class="nav__item"><a class="nav__link js-nav__link" href="#works">Works</a></li>
+            <li class="nav__item"><a class="nav__link js-nav__link" href="#contact">Contact</a></li>
+          </ul> <!-- /.nav__inner -->
+        </nav> <!-- /.nav -->
+      </div> <!-- /.header__inner -->
+    </header> <!-- /.header -->
+
+    <!-- MAIN VISUAL -->
+    <div class="mv">
+      <div class="mv__inner">
+        <h1 class="mv__title">Design for Smile.</h1>
+        <p class="mv-text">快適なオフィスをデザインする</p>
+      </div> <!-- /.mv__inner -->
+    </div> <!-- /.mv -->
+
+    <!-- CONCEPT -->
+    <section id="concept" class="sec">
+      <div class="sec__inner">
+        <h2 class="sec__title">CONCEPT</h2>
+        <p class="concept-text">“働きたくなる空間”をデザインすることで人々を幸せにする。</p>
+        <div class="media media--rev">
+          <figure class="media__pic"><img class="media__img" src="./img/concept-image@2x.jpg" alt="働きたくなる空間"></figure>
+          <div class="media__body">
+            <!-- <h3 class="media__title">メディアリバースのタイトル</h3> -->
+            <p class="media__desc">私たちは、オフィスに特化した空間デザイン専門としております。その理由は、「働きたくなる空間で仕事ができれば多くの人を幸せにできるのではないか」と考えるためです。そんな想いの株式会社Cresta Designだからこそできる空間デザインを提供させていただきます。</p>
+          </div> <!-- /.media__body -->
+        </div> <!-- /.media -->
+        <p class="hilight-text">Our Concept</p>
+      </div> <!-- /.sec__inner -->
+    </section> <!-- /#concept -->
+
+    <!-- WORKS -->
+    <section id="works" class="sec">
+      <div class="sec__inner">
+        <h2 class="sec__title">Works</h2>
+        <div class="cards cards--col3">
+
+          <div class="cards__item card">
+            <figure class="card__pic"><img class="card__img" src="./img/card-img01@2x.jpg" alt="カード"></figure>
+            <div class="card__body">
+              <!-- <h3 class="card__title">カードのタイトル</h3> -->
+              <p class="card__desc">新規サイトを公開しました。今回のサイトは白と黒を基調にしたミニマルなデザインになっています。</p>
+            </div> <!-- /.card__body -->
+          </div> <!-- /.card -->
+          <div class="cards__item card">
+            <figure class="card__pic"><img class="card__img" src="./img/card-img02@2x.jpg" alt="カード"></figure>
+            <div class="card__body">
+              <!-- <h3 class="card__title">カードのタイトル</h3> -->
+              <p class="card__desc">新規サイトを公開しました。今回のサイトは白と黒を基調にした</p>
+            </div> <!-- /.card__body -->
+          </div> <!-- /.card -->
+          <div class="cards__item card">
+            <figure class="card__pic"><img class="card__img" src="./img/card-img03@2x.jpg" alt="カード"></figure>
+            <div class="card__body">
+              <!-- <h3 class="card__title">カードのタイトル</h3> -->
+              <p class="card__desc">新規サイトを公開しました。今回のサイトは白と黒を基調にしたミニマルなデザインになっています。</p>
+            </div> <!-- /.card__body -->
+          </div> <!-- /.card -->
+        </div> <!-- /.cards -->
+        <a href="#!" class="btn">View more</a>
+        <p class="hilight-text">Our Works</p>
+      </div> <!-- /.sec__inner -->
+    </section> <!-- /#works -->
+
+    <!-- SERVICE -->
+    <section id="service" class="sec">
+      <div class="sec__inner">
+        <h2 class="sec__title">Service</h2>
+        <ul class="service-list">
+          <li>Hearing</li>
+          <li>Planning</li>
+          <li>Direction</li>
+        </ul>
+        <p class="hilight-text">Our Service</p>
+      </div> <!-- /.sec__inner -->
+    </section> <!-- /#service -->
+
+    <!-- CONTACT -->
+    <section id="contact" class="sec">
+      <div class="sec__inner">
+        <h2 class="sec__title">Contact</h2>
+        <p class="contact-text">お気軽にご相談ください。</p>
+        <a href="contact.html" class="btn">Contact</a>
+        <p class="hilight-text">Contact us</p>
+      </div> <!-- /.sec__inner -->
+    </section> <!-- /#contact -->
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer__inner">
+        <small>©︎cresta.design all rights reserved</small>
+      </div> <!-- /.footer__inner -->
+    </footer> <!-- /.footer -->
+
+  </div> <!-- /.container -->
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- script js -->
+  <script src="./js/script.js"></script>
+</body>
+</html>
