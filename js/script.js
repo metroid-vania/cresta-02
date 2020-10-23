@@ -6,6 +6,20 @@ var scroll = new SmoothScroll('a[href*="#"]', {
   easing: 'easeInOutQuint'
 });
 
+/* swiper js */
+$(function () {
+  let swipeOption = {
+    loop: true, // エンドレスリピートさせる
+    effect: 'fade', // これがフェードのオプション
+    autoplay: {
+      delay: 4000, // 自動再生スピード
+      disableOnInteraction: false // ユーザが指やスマホでスライダーに触った時、スライドを止めないように設定するオプション
+    },
+    speed: 2000
+  };
+  new Swiper('.swiper-container-mv', swipeOption);
+});
+
 /* ハンバーガー */
 $(function () {
   $('.js-nav__toggle').click(function () {
@@ -47,18 +61,6 @@ $(window).on('scroll', function () {
 /* wow js */
 new WOW().init();
 
-/* swiper js */
-var swiper = new Swiper('.swiper-container', {
-  loop: true,
-  autoplay: {
-    delay: 3000,
-    disableOnInteraction: false,
-  },
-  pagination: {
-    el: '.swiper-pagination',
-    type: 'progressbar',
-  },
-});
 
 /* modaal */
 $('.modal').modaal();

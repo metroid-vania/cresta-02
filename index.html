@@ -8,6 +8,8 @@
   <meta name="description" content="Coding Practice">
   <!--  reset css -->
   <link rel="stylesheet" href="./css/reset.css">
+  <!-- swiper css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.css">
   <!--  style css -->
   <link rel="stylesheet" href="./css/style.css">
   <!-- google fonts -->
@@ -36,10 +38,18 @@
 
     <!-- MAIN VISUAL -->
     <div class="mv">
-      <div class="mv__inner">
-        <h1 class="mv__title">Design for Smile.</h1>
-        <p class="mv-text">快適なオフィスを<br class="hide-pc">デザインする</p>
-      </div> <!-- /.mv__inner -->
+      <div class="swiper-container-mv">
+        <div class="mv__copy">
+          <h1 class="mv__title">Design for Smile.</h1>
+          <p class="mv-text">快適なオフィスを<br class="hide-pc">デザインする</p>
+        </div>
+        <ul class="swiper-wrapper">
+          <!-- スライダー部分 -->
+          <li class="swiper-slide mv__item"><img class="slide-img" src="./img/fv-bgi_01@2x.jpg" alt=""></li>
+          <li class="swiper-slide mv__item"><img class="slide-img" src="./img/fv-bgi_02@2x.jpg" alt=""></li>
+          <li class="swiper-slide mv__item"><img class="slide-img" src="./img/fv-bgi_03@2x.jpg" alt=""></li>
+        </ul>
+      </div>
     </div> <!-- /.mv -->
 
     <!-- CONCEPT -->
@@ -94,7 +104,7 @@
     <section id="service" class="sec sec--service">
       <div class="sec__inner">
         <h2 class="sec__title">Service</h2>
-        <ul class="service-list">
+        <ul class="service-list flued-box">
           <li>Hearing</li>
           <li>Planning</li>
           <li>Direction</li>
@@ -127,6 +137,8 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <!-- smooth-scroll js -->
   <script src="./js/smooth-scroll.polyfills.min.js"></script>
+  <!-- swiper js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.js"></script>
   <!-- script js -->
   <script src="./js/script.js"></script>
 </body>
