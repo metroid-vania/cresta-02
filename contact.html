@@ -1,1 +1,96 @@
-contact.html
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Contact | Cresta Design</title>
+  <meta name="description" content="Coding Practice 02">
+  <!--  reset css -->
+  <link rel="stylesheet" href="./css/reset.css">
+  <!-- swiper css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.css">
+  <!--  mailform css -->
+  <link rel="stylesheet" href="./mailform/css/mailform.css">
+  <!--  style css -->
+  <link rel="stylesheet" href="./css/style.css">
+  <!-- google fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&family=Noto+Serif:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+
+    <!-- HEADER -->
+    <header class="header">
+      <div class="header__inner">
+        <a href="index.html" class="brand">Cresta Design</a>
+        <nav class="nav nav--slide">
+          <button class="nav__toggle js-nav__toggle" aria-expanded="false" type="button">
+            <span class="nav__line"><span class="visually-hidden">メニューを開閉する</span></span>
+          </button> <!-- /.nav__toggle -->
+          <ul class="nav__inner js-nav__inner">
+            <li class="nav__item"><a class="nav__link js-nav__link" href="#!">Concept</a></li>
+            <li class="nav__item"><a class="nav__link js-nav__link" href="#!">Works</a></li>
+            <li class="nav__item"><a class="nav__link js-nav__link" href="#!">Service</a></li>
+            <li class="nav__item"><a class="nav__link js-nav__link" href="#!">Contact</a></li>
+          </ul> <!-- /.nav__inner -->
+        </nav> <!-- /.nav -->
+      </div> <!-- /.header__inner -->
+    </header> <!-- /.header -->
+
+    <!-- MAIN VISUAL -->
+    <div class="mv mv--contact">
+      <div class="mv__contact-copy">
+        <h1 class="mv__contact-title">Contact</h1>
+      </div>
+    </div> <!-- /.mv -->
+
+    <!-- FORM -->
+    <section id="form" class="sec sec--form">
+      <div class="sec__inner">
+        <!-- form start -->
+        <form action="./mailform/php/mailform.php" method="post" class="form">
+          <dl>
+            <dt>お問い合わせ内容</dt>
+            <dd>
+              <ul>
+                <li><input type="checkbox" class="kind" name="kind[]" id="kind_1" value="資料請求"><label for="kind_1">資料請求</label></li>
+                <li><input type="checkbox" class="kind" name="kind[]" id="kind_2" value="お電話でのご相談を希望"><label for="kind_2">お電話でのご相談を希望</label></li>
+                <li><input type="checkbox" class="kind" name="kind[]" id="kind_3" value="申し込み"><label for="kind_3">申し込み</label></li>
+              </ul>
+            </dd>
+            <dt>会社名</dt>
+            <dd><input type="text" class="form__company" name="company" value=""></dd>
+            <dt>電話番号</dt>
+            <dd><input type="tel" class="form__phone" name="phone" value=""></dd>
+            <dt>メールアドレス</dt>
+            <dd><input type="email" class="form__mail_address" name="mail_address" value=""></dd>
+            <dt>その他</dt>
+            <dd><textarea class="form__contents" name="contents" cols="40" rows="5"></textarea></dd>
+          </dl>
+          <div class="center-box">
+            <a href="#!" class="btn btn--submit">submit</a>
+          </div>
+        </form>
+        <!-- form end -->
+      </div> <!-- /.sec__inner -->
+    </section> <!-- /#form -->
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer__inner">
+        <small>©︎cresta.design all rights reserved</small>
+      </div> <!-- /.footer__inner -->
+    </footer> <!-- /.footer -->
+
+  </div> <!-- /.container -->
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- smooth-scroll js -->
+  <script src="./js/smooth-scroll.polyfills.min.js"></script>
+  <!-- swiper js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.js"></script>
+  <!-- script js -->
+  <script src="./js/script.js"></script>
+</body>
+</html>
