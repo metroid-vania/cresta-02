@@ -480,6 +480,10 @@ label {
   .mv {
     height: 599px;
   }
+  .mv .slide-img {
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -1294,6 +1298,5 @@ label {
 
 .flued-box {
   margin: 0 calc(50% - 50vw + 8px);
-  width: 100vw;
 }
 /*# sourceMappingURL=sourcemaps/style.css.map */
