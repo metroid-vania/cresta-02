@@ -49,7 +49,7 @@ html {
 body {
   -webkit-font-feature-settings: "palt";
   background: #fff;
-  color: 171717;
+  color: #171717;
   font-family: "Noto Serif", "Noto Serif JP", serif;
   font-feature-settings: "palt";
   font-size: 16px;
@@ -113,7 +113,7 @@ label {
 }
 
 .floating__link {
-  background: 171717;
+  background: #171717;
   color: #fff;
   display: block;
   opacity: 0.8;
@@ -752,7 +752,7 @@ label {
 }
 
 .card__title {
-  color: 171717;
+  color: #171717;
   font-weight: bold;
   margin-bottom: 8px;
 }
@@ -770,7 +770,7 @@ label {
 }
 
 .card__desc {
-  color: 171717;
+  color: #171717;
   line-height: 1.88;
 }
 
@@ -901,7 +901,7 @@ label {
 
 .sec__title {
   align-items: center;
-  color: 171717;
+  color: #171717;
   display: flex;
   font-style: italic;
   font-weight: bold;
@@ -1005,7 +1005,7 @@ label {
 }
 
 .media__title {
-  color: 171717;
+  color: #171717;
   font-weight: bold;
   margin-bottom: 8px;
 }
@@ -1023,7 +1023,7 @@ label {
 }
 
 .media__desc {
-  color: 171717;
+  color: #171717;
   font-weight: bold;
   line-height: 1.88;
 }
@@ -1085,7 +1085,7 @@ label {
 }
 
 .half-media__title {
-  color: 171717;
+  color: #171717;
   font-weight: bold;
   margin-bottom: 8px;
 }
@@ -1103,7 +1103,7 @@ label {
 }
 
 .half-media__desc {
-  color: 171717;
+  color: #171717;
 }
 
 @media screen and (max-width: 767px) {
@@ -1127,7 +1127,7 @@ label {
 }
 
 .clearly-text {
-  text-shadow: 171717 1px 1px 10px, 171717 -1px 1px 10px, 171717 1px -1px 10px, 171717 -1px -1px 10px;
+  text-shadow: #171717 1px 1px 10px, #171717 -1px 1px 10px, #171717 1px -1px 10px, #171717 -1px -1px 10px;
 }
 
 .mv-text {
